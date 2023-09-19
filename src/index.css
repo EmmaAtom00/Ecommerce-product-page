@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Kumbh Sans;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .menuDrop {
+    position:absolute;
+  }
+
+  .displayImge {
+    opacity: 80%;
+    border: 2px solid hsl(26, 100%, 55%);
+  }
+
+  .thumbnail {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+
+  @media screen and (min-width: 768px) {
+    .men p {
+      font-size: 15px;
+    }
+
+    .profilePic {
+      border: 1px solid white;
+      border-radius: 50px;
+    }
+    .profilePic:hover {
+      border: 1px solid hsl(26, 100%, 55%);
+      color: rgba(255, 255, 255, 0.562);
+    }
+
+  }
+  
+}
